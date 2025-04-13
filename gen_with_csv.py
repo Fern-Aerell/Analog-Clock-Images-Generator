@@ -53,7 +53,7 @@ def generate_all_clocks(output_folder='clocks', csv_file='analog_clock.csv'):
 
     with open(csv_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['Front', 'Back'])  # Optional header
+        # writer.writerow(['Front', 'Back'])  # Optional header
         writer.writerows(rows)
 
     print(f'All clock images saved to "{output_folder}/"')
